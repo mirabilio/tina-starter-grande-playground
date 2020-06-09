@@ -1,0 +1,17 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  // "command": "rm -rf ./cache && gatsby clean && yarn link gatsby-plugin-json-remark",
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Gatsby develop preLaunchTasks",
+      "type": "shell",
+      "command": "rm -rf ./cache && gatsby clean",
+      "presentation": {
+        "reveal": "always"
+      },
+      "group": "build"
+    }
+  ]
+}

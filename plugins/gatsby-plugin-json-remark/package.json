@@ -1,0 +1,21 @@
+{
+  "name": "gatsby-plugin-json-remark",
+  "description": "A GatsbyJs plugin that transforms markdown content from JSON files. The new MarkdownRemark nodes are placed inside the original `gatsby-transformer-json` node tree. Transformed HTML is also populated in new fields with \"Html\" appended to field names.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mirabilio/gatsby-plugin-json-remark"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "tinacms",
+    "tina-cms",
+    "cms",
+    "remark",
+    "markdown"
+  ],
+  "author": "Pat Nolan",
+  "license": "MIT",
+  "version": "1.1.4"
+}

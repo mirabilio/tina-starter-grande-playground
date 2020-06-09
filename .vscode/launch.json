@@ -1,0 +1,103 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Jest Tests",
+      "type": "node",
+      "request": "launch",
+      "protocol": "inspector",
+      "runtimeExecutable": "~/.nvm/versions/node/v14.3.0/bin/node",
+      "runtimeArgs": [
+        "--inspect-brk",
+        "--no-cache",
+        "--trace-warnings",
+        "${workspaceRoot}/node_modules/.bin/jest",
+        "--coverage",
+        "--runInBand"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    },
+    // {
+    //   "name": "Jest Current File",
+    //   "type": "node",
+    //   "request": "launch",
+    //   "program": "${workspaceFolder}/node_modules/.bin/jest",
+    //   "args": [
+    //     "${fileBasenameNoExtension}",
+    //     "--no-cache",
+    //     "--config",
+    //     "jest.config.js"
+    //   ],
+    //   "console": "integratedTerminal",
+    //   "internalConsoleOptions": "neverOpen",
+    //   "disableOptimisticBPs": true
+    // },
+
+    {
+      "name": "Jest Current File - Watch",
+      "type": "node",
+      "runtimeVersion": "default",
+      "request": "launch",
+      "protocol": "inspector",
+      "runtimeExecutable": "~/.nvm/versions/node/v14.3.0/bin/node",
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "args": [
+        "${fileBasenameNoExtension}",
+        "--no-cache",
+        "--watch",
+        "--coverage",
+        "--config",
+        "jest.config.js"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "disableOptimisticBPs": true
+    },
+    // {
+    //   "name": "Jest Current File - Watch",
+    //   "type": "node",
+    //   "runtimeVersion": "default",
+    //   "request": "launch",
+    //   "program": "${workspaceFolder}/node_modules/.bin/jest",
+    //   "args": [
+    //     "${fileBasenameNoExtension}",
+    //     "--no-cache",
+    //     "--watch",
+    //     "--coverage",
+    //     "--config",
+    //     "jest.config.js"
+    //   ],
+    //   "console": "integratedTerminal",
+    //   "internalConsoleOptions": "neverOpen",
+    //   "disableOptimisticBPs": true
+    // },
+    {
+      "name": "Gatsby develop",
+      "type": "node",
+      "runtimeVersion": "default",
+      "request": "launch",
+      "protocol": "inspector",
+      "runtimeExecutable": "~/.nvm/versions/node/v14.3.0/bin/node",
+      "program": "${workspaceRoot}/node_modules/gatsby/dist/bin/gatsby",
+      "args": ["develop"],
+      "stopOnEntry": false,
+      "runtimeArgs": ["--nolazy"],
+      "preLaunchTask": "Gatsby develop preLaunchTasks",
+      "sourceMaps": false,
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Gatsby build",
+      "type": "node",
+      "runtimeVersion": "default",
+      "request": "launch",
+      "protocol": "inspector",
+      "program": "${workspaceRoot}/node_modules/gatsby/dist/bin/gatsby",
+      "args": ["build"],
+      "stopOnEntry": false,
+      "runtimeArgs": ["--nolazy"],
+      "sourceMaps": false
+    }
+  ]
+}

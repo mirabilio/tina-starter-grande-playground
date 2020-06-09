@@ -8,6 +8,7 @@
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
     "babel-plugin-styled-components": "^1.10.6",
+    "chalk": "^4.1.0",
     "focus-visible": "^5.0.2",
     "gatsby": "^2.23.1",
     "gatsby-background-image": "^1.0.1",
@@ -38,7 +39,11 @@
     "gsap": "^3.2.6",
     "lodash.clonedeep": "^4.5.0",
     "lodash.get": "^4.4.2",
+    "lodash.isempty": "^4.4.0",
+    "lodash.isundefined": "^3.0.1",
     "lodash.merge": "^4.6.2",
+    "lodash.omit": "^4.5.0",
+    "lodash.without": "^4.4.0",
     "polished": "^3.4.1",
     "prismjs": "^1.17.1",
     "prop-types": "^15.7.2",
@@ -71,6 +76,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tinacms/tina-starter-grande"
+    "url": "https://github.com/mirabilio/tina-starter-grande-playground"
   }
 }
